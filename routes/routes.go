@@ -30,7 +30,7 @@ func GetRouter(Router *http.Server) {
 		inventory := api.Group("/inventory")
 		{
 			inventory.GET("/view", controllers.ViewInventory)
-			inventory.POST("/edit", controllers.EditInventory)
+			inventory.POST("/edit", controllers.UpdateInventory)
 		}
 	}
 }
